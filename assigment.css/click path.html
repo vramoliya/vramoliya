@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Sky</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>L</span>ogo
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="content">
+            <h1>WELCOME TO SKY</h1>
+            <p>Our Clients Are Our First Priority</p>
+            <p class="subtext">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <div class="buttons">
+                <a href="#" class="btn red">Get Started Now</a>
+                <a href="#" class="btn transparent">Learn More</a>
+            </div>
+        </div>
+        <div class="arrows">
+            <span class="arrow left">&lt;</span>
+            <span class="arrow right">&gt;</span>
+        </div>
+    </section>
+</body>
+</html>
+<style>
+
+                                                                                                                                                                                                                `1
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222; /* Dark background */
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(119, 18, 18);
+    margin-top: 5px 10px;
+    transition: color 0.3s;
+}
+
+
+
+.hero {
+    text-align: center;
+    padding: 100px auto;
+    background: url('background.jpg') no-repeat center center/cover; /* Replace 'background.jpg' with your background image */
+}
+
+.hero p {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.li{
+     justify-content: right;
+
+}
+
+.hero {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ15NHv9cxJxwyvgFt0pOl8kvaWCyaKvHTalQ&s) no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}
+
+.content {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>

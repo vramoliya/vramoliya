@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>HEADER</header>
+    <nav class="menu">MENU</nav>
+    <section class="hero">HERO</section>
+    <section class="main">MAIN</section>
+    <section class="extra">EXTRA</section>
+    <section class="image">IMAGE</section>
+    <footer class="banner">BANNER</footer>
+  </div>
+</body>
+</html>
+
+<style>
+/* Global styles */    
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+
+header {
+  background-color: navy;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.menu {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.hero {
+  background-color: lightblue;
+  text-align: center;
+  padding: 20px;
+}
+
+.main {
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.extra {
+  background-color: lightgreen;
+  text-align: center;
+  padding: 20px;
+}
+
+.image {
+  background-color: lightcyan;
+  text-align: center;
+  padding: 20px;
+}
+
+.banner {
+  background-color: gold;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Desktop layout */
+@media (min-width: 1024px) {
+  .container {
+    grid-template-areas:
+      "header header"
+      "menu hero"
+      "main image"
+      "banner extra";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  .menu {
+    grid-area: menu;
+  }
+
+  .hero {
+    grid-area: hero;
+  }
+
+  .main {
+    grid-area: main;
+  }
+
+  .image {
+    grid-area: image;
+  }
+
+  .extra {
+    grid-area: extra;
+  }
+
+  .banner {
+    grid-area: banner;
+  }
+}
+
+/* Tablet layout */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "hero"
+      "menu"
+      "main"
+      "banner"
+      "extra image";
+    grid-template-columns: 2fr 1fr;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  .menu {
+    grid-area: menu;
+  }
+
+  .hero {
+    grid-area: hero;
+  }
+
+  .main {
+    grid-area: main;
+  }
+
+  .image {
+    grid-area: image;
+  }
+
+  .extra {
+    grid-area: extra;
+  }
+
+  .banner {
+    grid-area: banner;
+  }
+}
+
+/* Mobile layout */
+@media (max-width: 767px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "menu"
+      "hero"
+      "main"
+      "banner"
+      "extra"
+      "image";
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  .menu {
+    grid-area: menu;
+  }
+
+  .hero {
+    grid-area: hero;
+  }
+
+  .main {
+    grid-area: main
+</style>
